@@ -9,5 +9,5 @@ source activate qiime1
 export TMPDIR=~/qiime_tmp
 #joining paired ends
 echo "joining paired ends via Seqprep"
-join_paired_ends.py -m Seqprep -f Read1.fastq.gz -r Read2.fastq.gz -b Index.fastq.gz -o Seqprep_joined
+time join_paired_ends.py -m Seqprep -f Read1.fastq.gz -r Read2.fastq.gz -b Index.fastq.gz -o Seqprep_joined
 source deactivate
