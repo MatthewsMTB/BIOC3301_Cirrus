@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=32
+#PBS -l walltime=00:30:00
+#PBS -N Validate_map
+#PBS -A d411
+#PBS -m bea
+#PBS -M zcbtatt@ucl.ac.uk
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+#loading virtualenv
+echo "loading virtualenv"
+source activate qiime1
+export TMPDIR=~/qiime_tmp
+echo "validate_map"
+time validate_mapping_file.py -m ~/2018_02_smb/map.txt -o ~/2018_02_smb/vmf
+source deactivate
