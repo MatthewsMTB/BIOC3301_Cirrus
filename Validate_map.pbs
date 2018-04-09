@@ -2,7 +2,7 @@
 #PBS -l select=1:ncpus=32
 #PBS -l walltime=00:30:00
 #PBS -N Validate_map
-#PBS -A d411
+#PBS -A d411-training
 #PBS -m bea
 #PBS -M zcbtatt@ucl.ac.uk
 cd $PBS_O_WORKDIR
