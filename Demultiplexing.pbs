@@ -1,6 +1,6 @@
 #! bin/bash/
-#PBS -1 walltime=01:00:00
-#PBS -1 select=1:ncpus=32
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=32
 #PBS -N 2018_demultimplexing
 #PBS -A d411-training
 cd $PBS_O_WORKDIR
