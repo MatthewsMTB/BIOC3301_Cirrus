@@ -1,0 +1,13 @@
+#! bin/bash/
+#PBS -1 walltime=01:00:00
+#PBS -1 select=1:ncpus=32
+#PBS -N 2018_demultimplexing
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+source activate qiime1
+export TMPDIR=~/qiime_tmp
+echo 'Demultiplexing and quality filtering'
+time split_libraries_fastq.py -m map.txt -i read1.fastq.gz -b index.fastq.gz -o ~/2018_02_smb/slout -q 25
+--rev_comp_barcode
+--rev_comp_mapping_barcodes
