@@ -9,7 +9,7 @@ source activate qiime1
 export TMPDIR=~/qiime_tmp
 echo 'Demultiplexing and quality filtering'
 time split_libraries_fastq.py -m map.txt \
--i Read1.fastq.gz \
+-i ~/2018_02_smb/Seqprep_joined/Seqprep_assembled.fastq.gz \
 -b Index.fastq.gz \
 -o ~/2018_02_smb/slout \
 -q 25 \
