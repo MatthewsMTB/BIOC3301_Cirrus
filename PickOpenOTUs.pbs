@@ -9,8 +9,8 @@ module load miniconda/python2
 source activate qiime1
 echo 'picking_open_otus'
 pick_open_reference_otus.py \
--i ~/2018_02_smb/slout/seqs.fna \
--o ~/2018_02_smb/otus \
+-i ~/slout/seqs.fna \
+-o ~/otus \
 -r ~/SILVA_128_QIIME_release/rep_set_aligned/97/97_outs_aligned_fasta.gz \
 -s 0.001 \
 --prefilter_percent_id 0.0 \
