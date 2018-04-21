@@ -4,7 +4,6 @@
 #PBS -N 2018_Pick_open_otus
 #PBS -A d411-training
 cd $PBS_O_WORKDIR
-export TMPDIR=~/qiime_tmp
 module load miniconda/python2
 source activate qiime1
 echo 'picking_open_otus'
