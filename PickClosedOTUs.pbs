@@ -9,7 +9,7 @@ module load miniconda/python2
 export TMPDIR=~/qiime_tmp
 source activate qiime1
 echo 'picking_closed_otus'
-pick_closed_reference_otus.py \
+time pick_closed_reference_otus.py \
 -i ~/2018_02_smb/slout/seqs.fna \
 -o ~/2018_02_smb/closed_otus \
 -r ~/2018_02_smb/SILVA_128_QIIME_release/rep_set_aligned/97/97_otus_aligned.fasta.gz \
