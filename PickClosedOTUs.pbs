@@ -1,5 +1,5 @@
 #! /bin/bash --login
-#PBS -l walltime=02:00:00
+#PBS -l walltime=03:00:00
 #PBS -l select=1:ncpus=72
 #PBS -L place=excl
 #PBS -N 2018_Pick_closed_otus
