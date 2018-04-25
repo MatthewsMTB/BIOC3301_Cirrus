@@ -9,7 +9,7 @@ export TMPDIR=~/qiime_tmp
 source activate qiime1
 echo 'Core Diversity Analyses'
 time core_diversity_analyses.py \
--i /closed_otus/otus_table.biom \
+-i /closed_otus/otu_table.biom \
 -o /Closed_otu_diversity \
 -m map.txt \
 -e 608
