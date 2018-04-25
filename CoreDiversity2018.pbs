@@ -3,6 +3,7 @@
 #PBS -l walltime=01:00:00
 #PBS -N Core_diversity_analyses
 #PBS -A d411-training
+cd $PBS_O_WORKDIR
 module load miniconda/python2
 export TMPDIR=~/qiime_tmp
 source activate qiime1
