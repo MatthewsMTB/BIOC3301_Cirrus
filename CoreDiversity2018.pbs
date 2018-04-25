@@ -13,6 +13,6 @@ time core_diversity_analyses.py \
 -i ~/2018_02_smb/closed_otus/otu_table.biom \
 -o ~/2018_02_smb/Closed_otu_diversity \
 -m map.txt \
--t ~/2018_02_smb/SILVA_128_QIIME_release/trees/97/97_otus.tre \
+--nonphylogenetic_diversity \
 -e 608
 source deactivate
