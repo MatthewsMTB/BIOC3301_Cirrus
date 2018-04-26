@@ -1,0 +1,16 @@
+#! /bin/bash --login
+#PBS walltime=04:00:00
+#PBS -l select=1:ncpus=72
+#PBS -N Silva_otus
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+export TMPDIR=~/qiime_tmp
+source activate qiime1
+time pick_closed_reference_otus.py \
+-r ~/2018_02_smb/SILVA_128_QIIME_release/rep_set/rep_set_16S_only/97/97_otus_16S.fasta \
+-i ~/2018_02_smb/slout/seqs.fna
+-o ~/2018_02_smb/Silva_otus
+-t ~/2018_02_smb/SILVA_128_QIIME_release/taxonomy/16S_only/97/majority_taxonomy_7_levels \
+-a \
+-O 36
+source deactivate
