@@ -15,5 +15,5 @@ time core_diversity_analyses.py \
 -o ~/2018_02_smb/Silva_otu_diversity \
 -m map.txt \
 -e 625 \
--O 24
+-a -O 24
 source deactivate
