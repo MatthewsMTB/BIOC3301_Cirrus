@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash --login
 #PBS -l select=1:ncpus=32
 #PBS -l walltime=00:30:00
 #PBS -N Validate_map
