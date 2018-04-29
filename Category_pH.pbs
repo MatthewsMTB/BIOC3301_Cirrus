@@ -11,7 +11,7 @@ source activate qiime1
 time compare_categories.py \
 --method adonis \
 -i ~/2018_02_smb/Silva_otu_diversity/bdiv_even625/unweighted_unifrac_dm.txt \
--m map.txt \
+-m map.txt row.names=NULL \
 -o ~/2018_02_smb/Categories_pH \
 -c SamplePh \
 -n 999
