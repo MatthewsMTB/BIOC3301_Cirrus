@@ -9,7 +9,7 @@ module load R-3.3.1-gcc-6.2.0-zjrjm3s
 export TEMPDIR=~/qiime_tmp
 source activate qiime1
 time compare_categories.py \
---method_adonis \
+--method adonis \
 -i ~/2018_02_smb/Silva_otu_diversity/bdiv_even625/unweighted_unifrac_dm.txt \
 -m map.txt \
 -o ~/2018_02_smb/Categories_pH \
