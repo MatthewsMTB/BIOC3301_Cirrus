@@ -9,7 +9,7 @@ export TMPDIR=~/qiime_tmp
 source activate qiime1
 time make_otu_heatmap.py \
 -i ~/2018_02_smb/Silva_otus/otu_table.biom \
--o ~/2018-02_smb/Otu_heatmap \
+-o ~/2018_02_smb/Otu_heatmap \
 -m map.txt \
 -t ~/2018_02_smb/SILVA_128_QIIME_release/trees/97/97_otus.tre 
 source deactivate
