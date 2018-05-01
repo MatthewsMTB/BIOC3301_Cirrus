@@ -13,6 +13,6 @@ time compare_categories.py \
 -i ~/2018_02_smb/Silva_otu_diversity/bdiv_even625/unweighted_unifrac_dm.txt \
 -m map.txt \
 -o ~/2018_02_smb/Compare_categories/P \
--c SamplePhosphorous \
+-c SamplePhosphorus \
 -n 999
 source deactivate
