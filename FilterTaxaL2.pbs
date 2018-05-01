@@ -9,6 +9,6 @@ export TEMPDIR=~/qiime_tmp
 source activate qiime1
 time filter_taxa_from_otu_table.py \
 -i ~/2018_02_smb/Silva_otu_diversity/taxa_plots/table_mc625_L2.biom \
--o ~/2018_02_smb/Silva_otu_diversity/taxa_plots/Table_L2_filtered.biom \
+-o ~/2018_02_smb/Silva_otu_diversity/taxa_plots \
 -n Ambiguous_taxa
 source deactivate
