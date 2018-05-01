@@ -1,0 +1,15 @@
+#!/bin/bash --login
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=16
+#PBS -N Make_filtered_otu_heatmap
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+export TMPDIR=~/qiime_tmp
+source activate qiime1
+time make_otu_heatmap.py \
+-i ~/2018_02_smb/Silva_otu_diversity/taxa_plots/table_mc625_sorted_L2.biom \
+-o ~/2018_02_smb/Otu_L2_heatmap \
+-m map.txt \
+-t ~/2018_02_smb/SILVA_128_QIIME_release/trees/97/97_otus.tre 
+source deactivate
