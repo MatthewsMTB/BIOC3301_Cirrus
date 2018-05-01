@@ -12,7 +12,7 @@ time compare_categories.py \
 --method adonis \
 -i ~/2018_02_smb/Silva_otu_diversity/bdiv_even625/unweighted_unifrac_dm.txt \
 -m map.txt \
--o ~/2018_02_smb/Categories_pH \
+-o ~/2018_02_smb/Compare_categories/N \
 -c SampleNitrogen \
 -n 999
 source deactivate
