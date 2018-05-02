@@ -10,5 +10,6 @@ source activate qiime1
 time alpha_diversity.py \
 -i ~/2018_02_smb/Silva_otus/otu_table.biom \
 -o ~/2018_02_smb/AlphaDiversityChao1 \
--m chao1
+-m chao1,PD_whole_tree \
+-t ~/2018_02_smb/SILVA_128_QIIME_release/trees/97/97_otus.tre
 source deactivate
