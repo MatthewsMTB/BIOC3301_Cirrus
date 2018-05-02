@@ -9,8 +9,8 @@ export TEMPDIR=~/qiime_tmp
 source activate qiime1
 time group_significance.py \
 -i ~/2018_02_smb/Silva_otu_diversity/taxa_plots/table_mc625_sorted_L2.biom \
--o ~/2018_02_smb/GroupSignificance/pH \
+-o ~/2018_02_smb/GroupSignificance \
 -c SamplePh \
 -m map.txt \
--s nonparametric_t_test
+-s kruskal_wallis
 source deactivate
