@@ -7,7 +7,7 @@ cd $PBS_O_WORKDIR
 module load miniconda/python2
 export TEMPDIR=~/qiime_tmp
 source activate qiime1
-time aplha_diversity.py \
+time alpha_diversity.py \
 -i ~/2018_02_smb/Silva_otus/otu_table.biom \
 -o ~/2018_02_smb/AlphaDiversityChao1 \
 -m chao1
