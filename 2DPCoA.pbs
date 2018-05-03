@@ -1,0 +1,14 @@
+#!/bin/bash --login
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=16
+#PBS -N 2D_PCoA
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+export TEMPDIR=~/qiime_tmp
+source activate qiime1
+time make_2d_plots.py \
+-i Silva_otu_diversity/bdiv_even625/weighted_dm_coords.txt \
+-m map.txt \
+-o ~/2018_02_smb/Silva_otu_diversity
+source deactivate
