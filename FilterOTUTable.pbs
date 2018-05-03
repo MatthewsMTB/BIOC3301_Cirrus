@@ -2,7 +2,7 @@
 #PBS -l walltime=01:00:00
 #PBS -l select=1:ncpus=16
 #PBS -N Filter_biom_table
-#PBS -A d411 training
+#PBS -A d411-training
 cd $PBS_O_WORKDIR
 module load miniconda/python2
 export TEMPDIR=~/qiime_tmp
