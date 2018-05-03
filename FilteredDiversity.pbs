@@ -1,0 +1,19 @@
+#! /bin/bash --login
+#PBS -l select=1:ncpus=72
+#PBS -l walltime=02:00:00
+#PBS -N Filtered_core_diversity
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda/python2
+export TMPDIR=~/qiime_tmp
+source activate qiime1
+echo 'Core Diversity Analyses'
+time core_diversity_analyses.py \
+--recover_from_failure \
+-i ~/2018_02_smb/closed_otus/Filtered_otu_table.biom \
+-o ~/2018_02_smb/Filtered_Diversity \
+-m map.txt \
+-t ~/2018_02_smb/SILVA_128_QIIME_release/trees/97/97_otus.tre \
+-e 10000 \
+-a -O 36 
+source deactivate
