@@ -1,4 +1,4 @@
-#! /bin/bash --login
+#!/bin/bash --login
 #PBS -l walltime=02:00:00
 #PBS -l select=1:ncpus=64
 #PBS -N 2018_Pick_open_otus
