@@ -1,0 +1,7 @@
+method name	ANOSIM
+test statistic name	R
+sample size	30
+number of groups	5
+test statistic	0.11246977868700014
+p-value	0.14699999999999999
+number of permutations	999
