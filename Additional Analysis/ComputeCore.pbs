@@ -9,6 +9,6 @@ export TEMPDIR=~/qiime_tmp
 source activate qiime1
 time compute_core_microbiome.py \
 -i ~/2018_02_smb/Silva_otus/otu_table.biom \
--o ~/2018_02_smb/Silva_otus/otu_table_core.biom \
+-o ~/2018_02_smb/Silva_otus/otu_table_core \
 --min_fraction_for_core 0.98
 source deactivate
