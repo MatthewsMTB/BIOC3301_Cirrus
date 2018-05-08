@@ -1,0 +1,15 @@
+#!/bin/bash --login
+#PBS -l walltime=00:30:00
+#PBS -l select=1:ncpus=16
+#PBS -N Meta_corr_N
+#PBS -A d411-training
+cd $PBS_O_WORKDIR
+module load miniconda
+export TMPDIR=~/qiime_tmp
+source activate qiime1
+time observation_metadata_correlation.py \
+-i ~/2018_02_smb/Filtered_Diversity/taxa_plots/table_mc5000_sorted_L2.biom \
+-o ~/2018_02_smb/Meta_correlation/N_correlation \
+-m map.txt \
+-c SampleNitrogen
+source deactivate
